@@ -9,14 +9,19 @@
 import UIKit
 
 class InputSelectorView: UIView {
-
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
     override func draw(_ rect: CGRect) {
-        layer.cornerRadius = 9.0
-        layer.borderWidth = 1.0
-        layer.borderColor = #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1)
-        layer.masksToBounds = true
+        let galleryView: GalleryButtonView = GalleryButtonView(frame: CGRect(x: 0,
+                                                                 y: 0,
+                                                                 width: 160,
+                                                                 height: 60))
+        let cameraView: CameraButtonView = CameraButtonView(frame: CGRect(x: (bounds.width / 2),
+                                                                          y: 0,
+                                                                          width: 160,
+                                                                          height: 60))
+        addSubview(cameraView)
+        addSubview(galleryView)
+        
         
         let divider: UIView = UIView(frame: CGRect(x: (bounds.size.width / 2),
                                                    y: 0,
@@ -24,11 +29,9 @@ class InputSelectorView: UIView {
                                                    height: bounds.size.height))
         divider.backgroundColor = .black
         addSubview(divider)
+        
+        layer.cornerRadius = 9
+        layer.masksToBounds = true
     }
  
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        backgroundColor = #colorLiteral(red: 0.8470588235, green: 0.8470588235, blue: 0.8470588235, alpha: 1)
-    }
-
 }

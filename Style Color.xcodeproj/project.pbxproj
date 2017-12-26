@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D08312971FF2D2E600DDC30A /* InputSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08312961FF2D2E600DDC30A /* InputSelectorView.swift */; };
+		D08312991FF2FD5700DDC30A /* GalleryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08312981FF2FD5700DDC30A /* GalleryButtonView.swift */; };
+		D083129B1FF303D300DDC30A /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083129A1FF303D300DDC30A /* CameraButtonView.swift */; };
 		D08F575E1FF022A4007A3957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F575D1FF022A4007A3957 /* AppDelegate.swift */; };
 		D08F57601FF022A4007A3957 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F575F1FF022A4007A3957 /* ColorPickerViewController.swift */; };
 		D08F57631FF022A4007A3957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08F57611FF022A4007A3957 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		D08312961FF2D2E600DDC30A /* InputSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSelectorView.swift; sourceTree = "<group>"; };
+		D08312981FF2FD5700DDC30A /* GalleryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryButtonView.swift; sourceTree = "<group>"; };
+		D083129A1FF303D300DDC30A /* CameraButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraButtonView.swift; sourceTree = "<group>"; };
 		D08F575A1FF022A4007A3957 /* Style Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Style Color.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08F575D1FF022A4007A3957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08F575F1FF022A4007A3957 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				D08F577E1FF025D2007A3957 /* ColorView.swift */,
 				D08312961FF2D2E600DDC30A /* InputSelectorView.swift */,
+				D08312981FF2FD5700DDC30A /* GalleryButtonView.swift */,
+				D083129A1FF303D300DDC30A /* CameraButtonView.swift */,
 			);
 			path = "Color Views";
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				D08F577F1FF025D2007A3957 /* ColorView.swift in Sources */,
 				D08F57601FF022A4007A3957 /* ColorPickerViewController.swift in Sources */,
 				D08312971FF2D2E600DDC30A /* InputSelectorView.swift in Sources */,
+				D083129B1FF303D300DDC30A /* CameraButtonView.swift in Sources */,
 				D08F575E1FF022A4007A3957 /* AppDelegate.swift in Sources */,
+				D08312991FF2FD5700DDC30A /* GalleryButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
