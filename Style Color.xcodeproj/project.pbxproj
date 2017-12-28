@@ -17,6 +17,7 @@
 		D08F57681FF022A4007A3957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08F57661FF022A4007A3957 /* LaunchScreen.storyboard */; };
 		D08F57731FF022A4007A3957 /* Style_ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F57721FF022A4007A3957 /* Style_ColorTests.swift */; };
 		D08F577F1FF025D2007A3957 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08F577E1FF025D2007A3957 /* ColorView.swift */; };
+		D0E9A9381FF462AE002B0E23 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9A9371FF462AE002B0E23 /* ColorSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D08F57721FF022A4007A3957 /* Style_ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style_ColorTests.swift; sourceTree = "<group>"; };
 		D08F57741FF022A4007A3957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D08F577E1FF025D2007A3957 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		D0E9A9371FF462AE002B0E23 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D08312961FF2D2E600DDC30A /* InputSelectorView.swift */,
 				D08312981FF2FD5700DDC30A /* GalleryButtonView.swift */,
 				D083129A1FF303D300DDC30A /* CameraButtonView.swift */,
+				D0E9A9371FF462AE002B0E23 /* ColorSlider.swift */,
 			);
 			path = "Color Views";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E9A9381FF462AE002B0E23 /* ColorSlider.swift in Sources */,
 				D08F577F1FF025D2007A3957 /* ColorView.swift in Sources */,
 				D08F57601FF022A4007A3957 /* ColorPickerViewController.swift in Sources */,
 				D08312971FF2D2E600DDC30A /* InputSelectorView.swift in Sources */,
