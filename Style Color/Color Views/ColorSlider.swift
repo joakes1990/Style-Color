@@ -10,23 +10,42 @@ import UIKit
 
 class ColorSlider: UIView {
 
+    @IBInspectable fileprivate var style: Int = 0
+    @IBInspectable var value: Float = 0
+    fileprivate var slider: UISlider?
     
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
+        guard let type: sliderType = sliderType(rawValue: style) else {
+            return
+        }
+        var color: CGColor
+        switch type {
+        case .red:
+            color = UIColor.red.cgColor
+            break
+        case .green:
+            color = UIColor.green.cgColor
+            break
+        case .blue:
+            color = UIColor.blue.cgColor
+            break
+        case .alpha:
+            color = UIColor.clear.cgColor
+        }
         let gradent: CAGradientLayer = CAGradientLayer()
         gradent.frame = bounds
-        gradent.colors = [UIColor.white.cgColor, UIColor.red.cgColor, UIColor.black.cgColor]
+        gradent.colors = [UIColor.black.cgColor, color, UIColor.white.cgColor]
         gradent.locations = [0.0, 0.75, 1.0]
         gradent.startPoint = CGPoint(x: 0, y: 0)
         gradent.endPoint = CGPoint(x: 1, y: 0)
         layer.insertSublayer(gradent, at: 0)
+        
+        slider?.setValue(value, animated: false)
     }
  
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let slider: UISlider = createSlider()
-        addSubview(slider)
+        addSubview(createSlider())
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,11 +59,16 @@ class ColorSlider: UIView {
         slider.maximumTrackTintColor = UIColor.clear
         slider.minimumTrackTintColor = UIColor.clear
         slider.setThumbImage(#imageLiteral(resourceName: "sliderSelector"), for: .normal)
+        slider.maximumValue = 0
+        slider.maximumValue = 255
+        slider.setValue(value, animated: false)
+        self.slider = slider
         return slider
     }
 
 }
 
-enum sliderType {
+enum sliderType: Int {
+    typealias RawValue = Int
     case red, green, blue, alpha
 }
