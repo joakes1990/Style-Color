@@ -89,7 +89,6 @@
 			children = (
 				D08F577D1FF025B0007A3957 /* Color Views */,
 				D08F575D1FF022A4007A3957 /* AppDelegate.swift */,
-				D08F575F1FF022A4007A3957 /* ColorPickerViewController.swift */,
 				D08F57611FF022A4007A3957 /* Main.storyboard */,
 				D08F57641FF022A4007A3957 /* Assets.xcassets */,
 				D08F57661FF022A4007A3957 /* LaunchScreen.storyboard */,
@@ -110,6 +109,7 @@
 		D08F577D1FF025B0007A3957 /* Color Views */ = {
 			isa = PBXGroup;
 			children = (
+				D08F575F1FF022A4007A3957 /* ColorPickerViewController.swift */,
 				D08F577E1FF025D2007A3957 /* ColorView.swift */,
 				D08312961FF2D2E600DDC30A /* InputSelectorView.swift */,
 				D08312981FF2FD5700DDC30A /* GalleryButtonView.swift */,

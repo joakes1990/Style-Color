@@ -11,6 +11,11 @@ import UIKit
 class ColorPickerViewController: UIViewController {
 
     @IBOutlet weak var colorTitleTextField: UITextField!
+    @IBOutlet weak var redSlider: ColorSlider!
+    @IBOutlet weak var greenSlider: ColorSlider!
+    @IBOutlet weak var blueSlider: ColorSlider!
+    @IBOutlet weak var colorView: ColorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorTitleTextField.delegate = self
@@ -21,7 +26,26 @@ class ColorPickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func setColor() {
+        let color: UIColor = UIColor(red: CGFloat(redSlider.value),
+                                     green: CGFloat(greenSlider.value),
+                                     blue: CGFloat(blueSlider.value),
+                                     alpha: 1)
+        colorView.setColor(color: color)
+    }
+    
+    @IBAction func changedRedValue(_ sender: Any) {
+        setColor()
+    }
+    
+    @IBAction func changeGreenValue(_ sender: Any) {
+        setColor()
+    }
+    
+    @IBAction func changedBlueValue(_ sender: Any) {
+        setColor()
+    }
+    
 }
 
 extension ColorPickerViewController: UITextFieldDelegate {

@@ -80,6 +80,9 @@
                                                         <real key="value" value="127"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changeGreenValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="JA4-Vn-lxP"/>
+                                                </connections>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGc-RV-GYQ">
                                                 <rect key="frame" x="36" y="635" width="63" height="29"/>
@@ -101,6 +104,9 @@
                                                         <real key="value" value="127"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changedRedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="vls-V6-qPO"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXU-6a-FQJ" customClass="ColorSlider" customModule="Style_Color" customModuleProvider="target">
                                                 <rect key="frame" x="27.5" y="768" width="320" height="30"/>
@@ -116,6 +122,9 @@
                                                         <real key="value" value="127"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changedBlueValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="1aQ-rw-uOW"/>
+                                                </connections>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSv-iN-yRh">
                                                 <rect key="frame" x="36" y="731" width="46" height="29"/>
@@ -178,7 +187,11 @@
                     <navigationItem key="navigationItem" title="New Color" id="D8O-J9-C66"/>
                     <size key="freeformSize" width="375" height="884"/>
                     <connections>
+                        <outlet property="blueSlider" destination="aXU-6a-FQJ" id="5t2-PK-kOj"/>
                         <outlet property="colorTitleTextField" destination="l15-x9-MXw" id="p5E-OV-06K"/>
+                        <outlet property="colorView" destination="qKR-xd-vvI" id="Aa9-SK-PCR"/>
+                        <outlet property="greenSlider" destination="Ddq-yg-tqE" id="Ooh-Xr-7Bg"/>
+                        <outlet property="redSlider" destination="cma-9u-gvf" id="q6X-qP-AAu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

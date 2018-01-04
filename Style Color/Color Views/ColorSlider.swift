@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ColorSlider: UIView {
+class ColorSlider: UISlider {
 
     @IBInspectable fileprivate var style: Int = 0
-    @IBInspectable var value: Float = 0
     fileprivate var slider: UISlider?
     
     override func draw(_ rect: CGRect) {
@@ -45,25 +44,23 @@ class ColorSlider: UIView {
  
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(createSlider())
+        configureSlider()
+        value = 0.5
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        let slider: UISlider = createSlider()
-        addSubview(slider)
+        configureSlider()
+        value = 0.5
     }
     
-    fileprivate func createSlider() -> UISlider {
-        let slider: UISlider = UISlider(frame: bounds)
-        slider.maximumTrackTintColor = UIColor.clear
-        slider.minimumTrackTintColor = UIColor.clear
-        slider.setThumbImage(#imageLiteral(resourceName: "sliderSelector"), for: .normal)
-        slider.maximumValue = 0
-        slider.maximumValue = 255
-        slider.setValue(value, animated: false)
-        self.slider = slider
-        return slider
+    fileprivate func configureSlider() {
+        maximumTrackTintColor = UIColor.clear
+        minimumTrackTintColor = UIColor.clear
+        setThumbImage(#imageLiteral(resourceName: "sliderSelector"), for: .normal)
+        maximumValue = 0
+        maximumValue = 1
+        setValue(value, animated: false)
     }
 
 }
